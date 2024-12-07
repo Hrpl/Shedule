@@ -1,5 +1,7 @@
-var builder = WebApplication.CreateBuilder(args);
+using Shedule.API.Extensions;
 
+var builder = WebApplication.CreateBuilder(args);
+builder.AddDataBase();
 // Add services to the container.
 
 builder.Services.AddControllers();

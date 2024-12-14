@@ -25,5 +25,7 @@ public static class AddServiceExtension
     public static void AddRegisterService(this IServiceCollection services)
     {
         services.AddScoped<IDbConnectionManager, DbConnectionManager>();
+        services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<IEmployeeRepository, EmployeeRepository>();
     }
 }

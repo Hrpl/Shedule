@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Shedule.Domain.Entities;
 
-public class User : BaseEntity
+public class Role
 {
-    public string Login {  get; set; }
-    public string Password { get; set; }
-    public int RoleId { get; set; }
+    public int Id { get; set; }
+    public string Name { get; set; } 
 }
